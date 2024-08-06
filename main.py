@@ -7,7 +7,7 @@ today = date.today()
 yesterday = today - timedelta(days=1)
 
 # Setup request parameters and inject api key
-api_key = "xPGfXxiiGsDzseYawQu2pp4TSpfh8EPIQSysDf3E"
+api_key = ""
 url = f"https://api.nasa.gov/planetary/apod?api_key={api_key}&date={yesterday}"
 response = requests.get(url)
 content = response.json()
